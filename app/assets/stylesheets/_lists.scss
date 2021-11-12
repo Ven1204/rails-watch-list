@@ -4,8 +4,12 @@
 
 .title-banner {
     font-size: 80px;
-    color: #4c5846e0;
-    text-shadow: beige 1.5px 1px;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    /* White glow */
+    0 0 7px rgb(80, 235, 66),
+    0 0 10px rgb(80, 235, 66),
+    0 0 21px rgb(80, 235, 66);
     background-position: center;
     text-align: center;
     position: relative;
@@ -14,24 +18,26 @@
 .banner-home {
   background-position: center;
   background-size: contain;
-  height: 300px;
+  object-fit: cover;
 }
 
 element.style {
     border: solid darkblue;
     border-radius: 15px;
+    background-color: azure;
 }
 
 .btn {
     border-radius: 16px;
     padding: 4px 8px;
-    background-color: deepskyblue;
+    background-color: rgb(13, 219, 40);
     text-align: center;
     color: aliceblue;
 }
 
 .btn :hover {
   color: aliceblue;
+  font-weight: bold;
 }
 
 
@@ -43,4 +49,23 @@ element.style {
   padding-bottom: 80px;
   margin: 16px;
   margin-bottom: 32px;
+}
+
+h3 {
+    color: rgb(244, 248, 10);
+    text-shadow:
+    /* White glow */
+    0 0 7px rgb(61, 46, 199),
+    0 0 10px rgb(61, 46, 199),
+    0 0 21px rgb(61, 46, 199),
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a :hover {
+  text-decoration: none;
+  font-size: 20px;
 }
