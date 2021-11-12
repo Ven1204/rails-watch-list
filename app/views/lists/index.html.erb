@@ -1,5 +1,5 @@
-<div class="banner-home" style="background-image: url(<%= asset_url ("https://image.tmdb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg")%>)">
-  <h1 class="title-banner">Movie Vault</h1>
+<div class="banner-home" style="background-image: url(<%= asset_url ('movie.jpg')%>)">
+  <h1 class="title-banner">Movie Vault</h1>ç
 </div>
 
 <div class="cover mb-4 d-flex align-items-center justify-content-center">
@@ -8,16 +8,18 @@
     <h3 class="typed-js"></h3>
   </div>
 </div>
+
 <div class="container py-5">
   <div class="d-flex align-items-center justify-content-between mb-3">
     <h3 class="mb-0">My Watchlist</h3>
     <%= link_to 'Create a movie list', new_list_path, class: 'btn btn-flat'%>
   </div>
+
   <div class="row">
     <% @lists.each do |list| %>
       <div class="co-12 colsm-6 col-md-4 mb-3" id="card-box">
         <%= link_to list_path(list), class:'text-decoration-none' do %>
-          <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path ('https://www.shutterstock.com/image-vector/collection-film-strip-frame-isolated-on-1194562906')%>)">
+          <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path ('movie.jpg')%>)">
             <%= list.name %>
           </div>
         <% end %>
