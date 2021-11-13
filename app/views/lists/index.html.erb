@@ -1,25 +1,21 @@
-  <div class="banner-home" style="background-image: url(<%= asset_url ('lines.jpg')%>)">
-    <h1 class="title-banner">Movies</h1>
+  <%# main page %>
+  <%# for the banner %>
+  <div class="banner-home" style="background-image: url(<%= asset_url ('blue.jpg')%>)">
+    <h1 class="title-banner">Movie Storage</h1>
   </div>
 
-  <div class="cover mb-4 d-flex align-items-center justify-content-center">
-    <div class="text-center">
-    <div class="navbar">
-      <h3 class="typed-js"></h3>
-    </div>
-  </div>
-
+  <%# container for the cards %>
   <div class="container py-5">
     <div class="d-flex align-items-center justify-content-between mb-3">
       <h3 class="mb-0">My Watchlist</h3>
-      <%= link_to 'Create a movie list', new_list_path, class: 'btn btn-flat'%>
+      <%= link_to 'Create watch list', new_list_path, class: 'btn btn-flat'%>
     </div>
-
+  <%# cards section %>
     <div class="row">
       <% @lists.each do |list| %>
         <div class="co-12 colsm-6 col-md-4 mb-3" id="card-box">
           <%= link_to list_path(list), class:'text-decoration-none' do %>
-            <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path ('lines.jpg')%>)">
+            <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= asset_path ('line.jpg')%>)">
               <%= list.name %>
             </div>
           <% end %>
@@ -27,3 +23,13 @@
       <% end %>
     </div>
   </div>
+
+<%#
+  <div>
+    <div class="cover mb-4 d-flex align-items-center justify-content-center">
+      <div class="text-center">
+      <div class="navbar">
+        <h3 class="typed-js"></h3>
+      </div>
+    </div>
+  </div> %>
