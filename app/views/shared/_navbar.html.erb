@@ -40,8 +40,19 @@
       <div class="home-link">
         <a class="nav-link" href="http://localhost:3000/lists">Home</a>
       </div>
-      <div class="create-link">
-        <a class="nav-link" href="#">Create new list</a>
+      <div class="create-link" >
+        <%# <a class="nav-link" href="#">Settings</a> %>
+        <div class="dropdown open">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="drop-down-btn" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+                Theme
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" id="dropdown-menu" aria-labelledby="drop-down-btn">
+            <button class="dropdown-item" onclick="swapStyle('####')">Light mode</button>
+            <button class="dropdown-item" onclick="swapStyle('####')">Dark mode</button>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
