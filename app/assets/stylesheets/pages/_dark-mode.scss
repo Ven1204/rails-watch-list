@@ -135,9 +135,9 @@ h3 {
 .btn:hover {
     color: aliceblue;
     box-shadow:
-      0 0 7px white,
-      0 0 10px white,
-     0 0 21px white,;
+      0 0 2px white,
+      0 0 4px white,
+     0 0 8px white,;
 }
 // dropdown menu
 #drop-down-btn {
@@ -146,17 +146,18 @@ border: transparent;
 text-decoration: none;
 font-size: 20px;
 font-weight: 200;
+color: rgba(199, 199, 199, 0.712);
 }
 #drop-down-btn:hover {
   box-shadow: none;
   background-color: transparent;
   border: transparent;
   text-decoration: none;
-    color: rgb(199, 199, 199);
-    text-shadow:
-    0 0 7px rgb(140, 140, 140),
-    0 0 10px rgb(140, 140, 140),
-    0 0 21px rgb(140, 140, 140),;
+    color: #fff;
+    // text-shadow:
+    // 0 0 7px rgb(140, 140, 140),
+    // 0 0 10px rgb(140, 140, 140),
+    // 0 0 21px rgb(140, 140, 140),;
 }
 #dropdown-menu{
   border-radius: 4px;
@@ -178,17 +179,17 @@ font-weight: 200;
   padding-top: 16px;
 }
 .home-link >a {
-  color: #fff;
+  color: rgba(199, 199, 199, 0.712);
   text-decoration: none;
   font-size: 20px;
 }
 .home-link > a:hover {
   text-decoration: none;
-  color: rgb(199, 199, 199);
-    text-shadow:
-    0 0 7px rgb(140, 140, 140),
-    0 0 10px rgb(140, 140, 140),
-    0 0 21px rgb(140, 140, 140),;
+  color: #fff;
+    // text-shadow:
+    // 0 0 7px rgb(140, 140, 140),
+    // 0 0 10px rgb(140, 140, 140),
+    // 0 0 21px rgb(140, 140, 140),;
 }
 .create-link > a {
   color: #fff;
@@ -233,7 +234,7 @@ font-weight: 200;
   margin-top: 4px;
 }
 .input-search::placeholder{
-  color:rgba(255,255,255,.5);
+  color:#fff;
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: 100;
@@ -250,22 +251,23 @@ font-weight: 200;
   border-radius: 50%;
   position: absolute;
   right: 0px;
-  color:#ffffff ;
+  color:rgba(199, 199, 199, 0.712);
   background-color:transparent;
   pointer-events: painted;
   margin-top: 4px;
 }
 .btn-search:hover {
-  box-shadow:
-  0 0 7px rgb(163, 161, 161),
-  0 0 10px rgb(163, 161, 161),
-  0 0 21px rgb(163, 161, 161),;
+  color: #fff;
+//   box-shadow:
+//   0 0 7px rgb(163, 161, 161),
+//   0 0 10px rgb(163, 161, 161),
+//   0 0 21px rgb(163, 161, 161),;
 }
 .btn-search:focus ~ .input-search{
   width: 300px;
   border-radius: 0px;
   background-color: transparent;
-  border-bottom:1px solid rgba(255,255,255,.5);
+  border-bottom:1px solid #fff;
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
   margin-top: 4px;
 }
@@ -273,7 +275,7 @@ font-weight: 200;
   width: 300px;
   border-radius: 0px;
   background-color: transparent;
-  border-bottom:1px solid rgba(255,255,255,.5);
+  border-bottom:1px solid #fff;
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
   margin-top: 4px;
 }
